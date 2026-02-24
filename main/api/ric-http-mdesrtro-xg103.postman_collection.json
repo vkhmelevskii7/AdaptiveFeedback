@@ -1,0 +1,5115 @@
+{
+  "info": {
+    "name": "RIC (mdesrtro-xg103)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Модели",
+      "item": [
+        {
+          "name": "Получение списка моделей",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/models",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одной модели",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/models",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/models/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/models/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание новых узлов в модели",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id/nodes",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id",
+                "nodes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение узла модели",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id/nodes/:node",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id",
+                "nodes",
+                ":node"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление узла модели",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id/nodes/:node",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id",
+                "nodes",
+                ":node"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Перемещение узла модели (drag&drop)",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id/nodes/:node/move",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id",
+                "nodes",
+                ":node",
+                "move"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение параметров модели",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id/nodes",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id",
+                "nodes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение списка аргументов модели",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id/arguments",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id",
+                "arguments"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение списка команд модели",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id/commands",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id",
+                "commands"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение списка событий модели",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/models/:id/events",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                ":id",
+                "events"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение стартовых наборов",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/models/kits",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "models",
+                "kits"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Объекты",
+      "item": [
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получить список команд",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/commands",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "commands"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получить команду по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/commands/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "commands",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/commands",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/commands",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "commands"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/commands/:id",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/commands/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "commands",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/commands/:id",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/commands/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "commands",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/commands/access",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/commands/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "commands",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/commands/access",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/commands/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "commands",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/packets",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/packets",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "packets"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного объекта",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение списка объектов",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/query",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/query",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "query"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение пакетов (истории)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/packets",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "packets"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение истории команд",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/logs/commands",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "logs",
+                "commands"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение модели объекта",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/model",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "model"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение идентификатора объекта",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/task/changeid",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "task",
+                "changeid"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Издание X.509 сертификата (MQTT)",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/task/cert",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "task",
+                "cert"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Очистка истории объекта",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/task/clear",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "task",
+                "clear"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление объекта",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/task/delete",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "task",
+                "delete"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/:id/task/fixState",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/task/fixState",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "task",
+                "fixState"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/:id/task/copylinks",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/task/copylinks",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "task",
+                "copylinks"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Отправка пакета",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/packets",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "packets"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Запуск режима автонаполнения модели",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/model/autofill/start",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "model",
+                "autofill",
+                "start"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Остановка режима автонаполнения модели",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/model/autofill/stop",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "model",
+                "autofill",
+                "stop"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Применить автонаполнение модели",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/model/autofill/commit",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "model",
+                "autofill",
+                "commit"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение состояние автонаполнения модели",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/model/autofill/state",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "model",
+                "autofill",
+                "state"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Команда: Обновить модель",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/commands/update_model",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "commands",
+                "update_model"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Вызов произвольной команды из модели",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/commands/:command",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "commands",
+                ":command"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение статистики списка объектов",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/stats",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                "stats"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение статистику одного объекта",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/stats",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "stats"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Запуск бота",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/bot/start",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "bot",
+                "start"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Остановка бота",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/bot/stop",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "bot",
+                "stop"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение состояние бота",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/bot/state",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "bot",
+                "state"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение конфигурации бота",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/bot/config",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "bot",
+                "config"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Запуск движения бота",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/bot/geo/start",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "bot",
+                "geo",
+                "start"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Пауза движения бота",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/bot/geo/pause",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "bot",
+                "geo",
+                "pause"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Остановка движения бота",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/bot/geo/stop",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "bot",
+                "geo",
+                "stop"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Вызов бота",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/bot/call",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "bot",
+                "call"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Логика",
+      "item": [
+        {
+          "name": "Получение статуса запущенных автоматов (по id автомата)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons/:id/statuses",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons",
+                ":id",
+                "statuses"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Запуск автомата",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons/:id/start",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons",
+                ":id",
+                "start"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Остановка автомата",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons/:id/stop",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons",
+                ":id",
+                "stop"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение автомата",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/automatons/:automaton?",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "automatons",
+                ":automaton?"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение логов автомата",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/automatons/:automaton/logs",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "automatons",
+                ":automaton",
+                "logs"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Запуск автомата из объекта",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/automatons/:automaton/start",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "automatons",
+                ":automaton",
+                "start"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Отправка события в автомат из объекта",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/automatons/:automaton/emit",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "automatons",
+                ":automaton",
+                "emit"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Остановка автомата из объекта",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/automatons/:automaton/stop",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "automatons",
+                ":automaton",
+                "stop"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Запуск автомата из раздела автоматов",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/automatons/:automaton/run",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "automatons",
+                ":automaton",
+                "run"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Настройка условий перехода",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons/parse_condition",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons",
+                "parse_condition"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Узнать следующее время срабатывания планировщика",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons/scheduler/get_next_invocation",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons",
+                "scheduler",
+                "get_next_invocation"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение списка автоматов",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного автомата",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание шаблона логики",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Редактирование шаблонов логики",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление шаблонов логики",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/automatons/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "automatons",
+                "access"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Обработчики",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного обработчика",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/handlers/transpile",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/transpile",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                "transpile"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/handlers/bundle",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/bundle",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                "bundle"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/handlers/:id/exec",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/:id/exec",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                ":id",
+                "exec"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/handlers/:id/webhook",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/:id/webhook",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                ":id",
+                "webhook"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/handlers/:id/webhook",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/:id/webhook",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                ":id",
+                "webhook"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/handlers/:id/webhook",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/handlers/:id/webhook",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "handlers",
+                ":id",
+                "webhook"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение обработчика по объекту",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/handlers",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "handlers"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/:id/handlers/:handler/start",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/handlers/:handler/start",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "handlers",
+                ":handler",
+                "start"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/:id/handlers/:handler/stop",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/handlers/:handler/stop",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "handlers",
+                ":handler",
+                "stop"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Геозоны",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/geofences",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geofences"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/geofences/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geofences",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/geofences",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geofences"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/geofences/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geofences",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/geofences/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geofences",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/geofences/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geofences",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/geofences/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geofences",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/:id/geofences/:geofence/start",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/geofences/:geofence/start",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "geofences",
+                ":geofence",
+                "start"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/objects/:id/geofences/:geofence/stop",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/geofences/:geofence/stop",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "geofences",
+                ":geofence",
+                "stop"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Фигуры",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/shapes",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "shapes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/shapes/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "shapes",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/shapes",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "shapes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/shapes/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "shapes",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/shapes/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "shapes",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/shapes/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "shapes",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/shapes/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "shapes",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/shapes/:id/file",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/shapes/:id/file",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "shapes",
+                ":id",
+                "file"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Метки",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/labels",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "labels"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/labels/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "labels",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/labels",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "labels"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/labels/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "labels",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/labels/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "labels",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/labels/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "labels",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/labels/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "labels",
+                "access"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Дашборды",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/dashboards",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "dashboards"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/dashboards/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "dashboards",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/dashboards",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "dashboards"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/dashboards/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "dashboards",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/dashboards/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "dashboards",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/dashboards/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "dashboards",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/dashboards/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "dashboards",
+                "access"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Отчеты",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/reports",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/reports",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/reports/builds",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/builds",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                "builds"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/reports/builds/:id",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/builds/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                "builds",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/reports/:id/build",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/:id/build",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                ":id",
+                "build"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/reports/builds/:id/cancel",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/builds/:id/cancel",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                "builds",
+                ":id",
+                "cancel"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/reports/builds/:id/export",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/builds/:id/export",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                "builds",
+                ":id",
+                "export"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/reports/:id/layout",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/:id/layout",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                ":id",
+                "layout"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/reports/:id/jobs",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/:id/jobs",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                ":id",
+                "jobs"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/reports/:id/jobs",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/:id/jobs",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                ":id",
+                "jobs"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/reports/:id/jobs/:jobId",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/:id/jobs/:jobId",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                ":id",
+                "jobs",
+                ":jobId"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/reports/:id/jobs/:jobId",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/reports/:id/jobs/:jobId",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reports",
+                ":id",
+                "jobs",
+                ":jobId"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Таблицы",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/tables",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/tables",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:tableId/rows",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:tableId/rows",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":tableId",
+                "rows"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:ns/:table",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:ns/:table",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":ns",
+                ":table"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:tableId/rows/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:tableId/rows/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":tableId",
+                "rows",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:ns/:table/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:ns/:table/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":ns",
+                ":table",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:tableId/rows",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:tableId/rows",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":tableId",
+                "rows"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:ns/:table",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:ns/:table",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":ns",
+                ":table"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:tableId/rows/:id",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:tableId/rows/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":tableId",
+                "rows",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:ns/:table/:id",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:ns/:table/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":ns",
+                ":table",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:tableId/rows/remove",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:tableId/rows/remove",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":tableId",
+                "rows",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:ns/:table/remove",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:ns/:table/remove",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":ns",
+                ":table",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:tableId/rows/:id",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:tableId/rows/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":tableId",
+                "rows",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:ns/:table/:id",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:ns/:table/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":ns",
+                ":table",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/tables/:tableId/rows",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/tables/:tableId/rows",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tables",
+                ":tableId",
+                "rows"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "События",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/events",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "events"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/events",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "events"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение события объекта",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/events",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "events"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Отправка событий на объект",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/objects/:id/events",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "objects",
+                ":id",
+                "events"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/events/org",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/events/org",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "events",
+                "org"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Настройки проекта",
+      "item": [
+        {
+          "name": "/admin/boot",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/admin/boot",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "admin",
+                "boot"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Иконки",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/icons",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "icons"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/icons/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "icons",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/icons",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "icons"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/icons/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "icons",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/icons/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "icons",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/icons/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "icons",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/icons/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "icons",
+                "access"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Стартовые наборы",
+      "item": [
+        {
+          "name": "/x/:slug*/start",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/x/:slug*/start",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "x",
+                ":slug*",
+                "start"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Связи",
+      "item": [
+        {
+          "name": "/links/labels/to/objects",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/links/labels/to/objects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "links",
+                "labels",
+                "to",
+                "objects"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/links/automatons/to/objects",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/links/automatons/to/objects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "links",
+                "automatons",
+                "to",
+                "objects"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/links/geofences/to/objects",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/links/geofences/to/objects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "links",
+                "geofences",
+                "to",
+                "objects"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/links/handlers/to/objects",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/links/handlers/to/objects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "links",
+                "handlers",
+                "to",
+                "objects"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/links/actions/to/objects",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/links/actions/to/objects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "links",
+                "actions",
+                "to",
+                "objects"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/links/repeaters/to/objects",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/links/repeaters/to/objects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "links",
+                "repeaters",
+                "to",
+                "objects"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/links/skills/to/objects",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/links/skills/to/objects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "links",
+                "skills",
+                "to",
+                "objects"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/links/dashboards/to/objects",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/links/dashboards/to/objects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "links",
+                "dashboards",
+                "to",
+                "objects"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/links/handlers/to/models",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/links/handlers/to/models",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "links",
+                "handlers",
+                "to",
+                "models"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/links/automatons/to/models",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/links/automatons/to/models",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "links",
+                "automatons",
+                "to",
+                "models"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Сообщения",
+      "item": [
+        {
+          "name": "Получение списка сообщений",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/messages",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "messages"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/messages",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "messages"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Пометить сообщение как прочитанное",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/messages/read/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "messages",
+                "read",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Очистка списка сообщений",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/messages/clear",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "messages",
+                "clear"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение истории сообщений",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/messages/history",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "messages",
+                "history"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение списка сообщений по интервалам",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/messages/history/bounds",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "messages",
+                "history",
+                "bounds"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Новости",
+      "item": [
+        {
+          "name": "/users/news",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/users/news",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "news"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/users/news/read/:id",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/users/news/read/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "news",
+                "read",
+                ":id"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Уведомления",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/notifiers",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifiers"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/notifiers/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifiers",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/notifiers",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifiers"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/notifiers/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifiers",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/notifiers/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifiers",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/notifiers/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifiers",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/notifiers/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifiers",
+                "access"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Пользователи",
+      "item": [
+        {
+          "name": "Раздел Помощь",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/users/help/config",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "help",
+                "config"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/users",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/users/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/users/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/users/filters",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/users/filters",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "filters"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/users/filters/:id",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/users/filters/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "filters",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/users/filters/:id",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/users/filters/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "filters",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/users/filters/access",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/users/filters/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "filters",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/users/filters/access",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/users/filters/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "filters",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/users/filters",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/users/filters",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "filters"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/users/feedback",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/users/feedback",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "feedback"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Прочее",
+      "item": [
+        {
+          "name": "*Admin project",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Admin project",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Users web projects",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Users web projects",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Users web uithemes",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Users web uithemes",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Config config",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Config config",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Links links",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Links links",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Objects view map",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Objects view map",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Objects view table",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Objects view table",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Показывать координаты на карте",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Objects labelposition",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Показывать параметры на карте",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Objects labelindicators",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Objects model autofill",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Objects model autofill",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Licenses sidebarinfo",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Licenses sidebarinfo",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Logic v2 logic",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Logic v2 logic",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Редактор моделей",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Models web models web",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Models v3 models",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Models v3 models",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Models v3 editor",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Models v3 editor",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "*Models v3 tags",
+          "request": {
+            "method": "UI",
+            "url": {
+              "raw": "{{host}}/api/v1*Models v3 tags",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Группы",
+      "item": [
+        {
+          "name": "/groups/:id/members",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/groups/:id/members",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "groups",
+                ":id",
+                "members"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/groups",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "groups"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/groups/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "groups",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/groups/:id/users",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/groups/:id/users",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "groups",
+                ":id",
+                "users"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание фильтров",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/groups/:id/filters",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "groups",
+                ":id",
+                "filters"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/groups/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "groups",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/groups/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "groups",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/groups",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "groups"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/groups/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "groups",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/groups/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "groups",
+                ":id"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Приглашения",
+      "item": [
+        {
+          "name": "Получение списка приглашений",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/invites",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "invites"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение роли пользователя",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/invites/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "invites",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Отправка прилашений",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/invites/send",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "invites",
+                "send"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Повторно выслать приглашение",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/invites/resend",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "invites",
+                "resend"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание ссылки-приглашения",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/invites/issue",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "invites",
+                "issue"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удалить пользователя из проекта",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/invites/revoke",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "invites",
+                "revoke"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Роли",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/roles",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "roles"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/roles/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "roles",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/roles",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "roles"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Изменение",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{host}}/api/v1/roles/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "roles",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/roles/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "roles",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/roles/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "roles",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/roles/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "roles",
+                "access"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "API Токены",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/tokens",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tokens"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/tokens",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tokens"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/tokens/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "tokens",
+                ":id"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "География",
+      "item": [
+        {
+          "name": "/geo/direct",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/geo/direct",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "direct"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/geo/reverse",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/geo/reverse",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "reverse"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/geo/route",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/geo/route",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "route"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/geo/osrm",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/geo/osrm",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "osrm"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "SMPP",
+      "item": [
+        {
+          "name": "/smpp/check/:id?",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/smpp/check/:id?",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "smpp",
+                "check",
+                ":id?"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/smpp/send",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/smpp/send",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "smpp",
+                "send"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "SMTP",
+      "item": [
+        {
+          "name": "/smtp/check/:id",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/smtp/check/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "smtp",
+                "check",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/smtp/send",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/smtp/send",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "smtp",
+                "send"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "texts",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/texts",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "texts"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/texts/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "texts",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Назначение доступа",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/texts/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "texts",
+                "access"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Ограничение доступа",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/texts/access",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "texts",
+                "access"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Файлы",
+      "item": [
+        {
+          "name": "Получение всего списка",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/files",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "files"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получение одного по id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/files/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "files",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "/files/public/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{host}}/api/v1/files/public/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "files",
+                "public",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Создание",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{host}}/api/v1/files",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "files"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Удаление",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{host}}/api/v1/files/:id",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "files",
+                ":id"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{token}}",
+        "type": "string"
+      }
+    ]
+  }
+}
